@@ -792,3 +792,77 @@ h3{
     list-style: none;
     margin-left: 3px;
 }
+
+/* HISTORIA */
+
+.historia {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.historia h2{
+    padding-top: 0;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.historia p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: justify;
+}
+
+/* WŁADZE */
+
+.zarzad img {
+    width: 500px;
+}
+
+.zarzad li{
+    list-style: none;
+}
+
+/* ZATRUDNIENIE */
+
+.zatrudnienie{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.zatrudnienie h1{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+.zatrudnienie h3 {
+    text-align: center;
+}
+
+.zatrudnienie p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.zatrudnienie ul li{
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.zatrudnienie li{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: justify;
+}
