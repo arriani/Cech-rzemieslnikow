@@ -609,17 +609,18 @@ h3{
     list-style-type: none;
 }
 
-.szkola a{
+.szkola  a{
     position: relative;
     color: #222;
     text-decoration: none;
+    display: inline-block;
 }
 
-.szkola a:hover{
+.szkola  a:hover{
     color: #222;
 }
 
-.szkola a::before{
+.szkola  a::before{
     content: "";
     position: absolute;
     display: block;
@@ -632,7 +633,7 @@ h3{
     transition: transform 0.3s ease;
 }
 
-.szkola a:hover::before{
+.szkola  a:hover::before{
     transform: scaleX(1);
 }
  
@@ -692,4 +693,102 @@ h3{
 
 .zaklady a:hover::before{
     transform: scaleX(1);
+}
+
+/* EGZAMINY */
+
+.egzamin p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.egzamin {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.egzamin li{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.egzamin h3{
+    padding-top: 0;
+    text-align: left;
+    font-weight: 600;
+}
+
+.zalaczniki li{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.zalaczniki h3{
+    padding-top: 0;
+    text-align: left;
+    font-weight: 600;
+}
+
+.zalaczniki  a{
+    position: relative;
+    color: #222;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.zalaczniki  a:hover{
+    color: #222;
+}
+
+.zalaczniki  a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.zalaczniki  a:hover::before{
+    transform: scaleX(1);
+}
+
+.zalaczniki {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.row-egz{
+    margin-top: 5%;
+    display: inline;
+
+}
+
+/* KADRA */
+
+.kadra img{
+    width: 500px;
+}
+
+.kadra li{
+    list-style: none;
+    margin-left: 3px;
 }
