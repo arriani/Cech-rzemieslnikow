@@ -644,6 +644,12 @@ h3{
 .szkola  a:hover::before{
     transform: scaleX(1);
 }
+
+@media(max-width: 700px){
+    .rekrutacja iframe{
+        width: 300px;
+    }
+}
  
 
 /* ZAKŁADY */
@@ -1117,6 +1123,16 @@ h3{
 
 .kierunek img{
     width: 500px;
+}
+
+@media(max-width: 700px) {
+    .kierunek img{
+        width: 300px;
+    }
+
+    .kierunek iframe{
+        width: 300px;
+    }
 }
 
 /*  AKTUALNOŚCI */
