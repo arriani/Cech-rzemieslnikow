@@ -1055,7 +1055,7 @@ h3{
 
 .galeria{
     width: 80%;
-    margin: 100px auto 50px;
+    margin: 50px auto 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
@@ -1064,6 +1064,9 @@ h3{
 .galeria img{
     width: 100%;
     cursor: pointer;
+    float: left;
+    height: 278px;
+    object-fit: cover;
 
 }
 
@@ -1114,6 +1117,239 @@ h3{
 
 .kierunek img{
     width: 500px;
+}
+
+/*  AKTUALNOŚCI */
+
+.post { display: none; }
+.active { display: block; }
+
+
+.tresc p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-left: -12px;
+    max-width: 600px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tresc {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center; 
+    
+}
+
+
+
+.post h3 {
+    
+    font-weight: 400;
+    padding-top: 0;
+    text-align: center; 
+}
+
+.tresc img {
+    max-width: 200px; 
+    max-height: 200px;
+    margin-right: 20px; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+#post {
+    margin-top: 200px;
+}
+
+.tresc ul{
+    margin-top: 0;
+    padding-left: 20px;
+    display: block;
+}
+
+.post  a{
+    position: relative;
+    color: #222;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.post ul a{
+    position: relative;
+    color: #777;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.post  a:hover{
+    color: #222;
+}
+
+.post  a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.post  a:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+.pagination{
+   display: flex;
+   align-items: center;
+   background: #fff;
+   color: #383838;
+   padding: 10px 40px;
+   border-radius: 6px;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+  .pagination-wrapper ul {
+    display: flex;
+    margin: 0 30px;
+  }
+
+  .pagination-wrapper ul button{
+    display: inline-block;
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 45px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #383838;
+    transition: background-position 0.3s;
+    border: none;
+
+  }
+
+  .pagination-wrapper ul button:hover{
+    background-color: #ddd;
+  }
+
+  .btn1,
+  .btn2 {
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #383838;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+ 
+
+  .btn1 img,
+  .btn2 img {
+    width: 24px;
+  }
+
+  .btn1 img{
+    margin-right: 15px;
+    transform: rotate(180deg);
+  }
+
+  .btn2 img{
+    margin-left: 15px;
+  }
+
+  .pagination-wrapper ul button.active {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#ff4568, #ff4568);
+    background-position: 0 0;
+
+  }
+
+  /* NEWS */
+
+  .news {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .news p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-left: -12px;
+}
+
+.news img{
+    width: 500px;
+}
+
+.news  a{
+    position: relative;
+    color: #222;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.news  a:hover{
+    color: #222;
+}
+
+.news  a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.news  a:hover::before{
+    transform: scaleX(1);
+}
+
+.news h4 {
+    text-align: left;
+    font-weight: 400;
+    padding-top: 0;
+}
+  
+.konkurs li{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
 }
 
 
