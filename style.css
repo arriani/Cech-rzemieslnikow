@@ -807,6 +807,12 @@ h3{
     margin-left: 3px;
 }
 
+@media(max-width: 700px) {
+    .kadra img {
+        max-width: 300px;
+    }
+}
+
 /* HISTORIA */
 
 .historia {
@@ -1015,6 +1021,13 @@ h3{
     padding: 8px 6px;
 }
 
+
+@media(max-width: 700px){
+    .podreczniki table{
+        font-size: 10px;
+    }
+}
+
 /* KONKURSY */
 
 .konkurs{
@@ -1109,6 +1122,13 @@ h3{
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .konkurs img{
+        max-width: 300px;
+        margin: 0 -28px;
+    }
 }
 
 /* REKRUTACJA */
@@ -1304,6 +1324,55 @@ h3{
     background-position: 0 0;
 
   }
+
+  @media(max-width: 700px){
+    .tresc {
+        display: block;
+    }
+
+    .pagination-wrapper {
+        .btn1,
+        .btn2{
+            display: none;
+        }
+    }
+  }
+
+  
+  .archiwum{
+      text-align: center;
+      padding-top: 14px;
+      font-size: 18px;
+      
+    }
+    
+    .archiwum a{
+        position: relative;
+        color: #222;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .archiwum  a:hover{
+        color: #222;
+    }
+    
+    .archiwum  a::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #222;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .archiwum  a:hover::before{
+        transform: scaleX(1);
+    }
 
   /* NEWS */
 
