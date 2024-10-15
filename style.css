@@ -847,6 +847,12 @@ h3{
     list-style: none;
 }
 
+@media(max-width: 700px){
+    .zarzad img{
+        max-width: 300px;
+    }
+}
+
 /* ZATRUDNIENIE */
 
 .zatrudnienie{
@@ -913,8 +919,8 @@ h3{
 }
 
 .spotkania table{
-   width: 100%;
-   table-layout: fixed;
+    width: 100%;
+    table-layout: fixed;
 }
 
 .spotkania th{
@@ -1429,12 +1435,25 @@ h3{
     font-weight: 400;
     padding-top: 0;
 }
-  
+
 .konkurs li{
     color: #777;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
+}
+
+/* CECH */
+
+.cech{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.cech .row{
+    display: inline;
 }
 
 
